@@ -12,23 +12,24 @@
   
   <SCRIPT language=JavaScript>
   function password(){
-  var testV=1;
-  var pass1 = prompt('我们的密码：','');
-  while (testV < 3){
-  if (!pass1)
-  history.go(-1);
-  if (pass! == "0928") {
-  alert('密码正确');
-  break;}
-  testV+=1;
-  var pass1 = prompt('密码错误！请重新输入：');
+    var testV=0;
+    var pass1 = prompt('宝宝的专属密码：','');
+    while (testV < 5){
+      if (!pass1)
+        history.go(-1);
+      if (pass1 === "0928") {
+        alert('密码正确');
+        break;
+      }
+      testV+=1;
+      pass1 = prompt('请不要访问我们的网页！！！：');
+    }
+    if (pass1 !== "0928" && testV ==5){
+	  history.go(0);
+	}
   }
-  if (pass1!="password" & testV == 3)
-  history.go(-1);
-  return "";
-  }
-  document.write(password());
-  <\SCRIPT>  
+  password();
+  </SCRIPT> 
 </head>
 
 <body>
