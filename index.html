@@ -9,6 +9,26 @@
   <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400" rel="stylesheet">
   <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
   <link rel="stylesheet" href="style/style.css">
+  
+  <SCRIPT language=JavaScript>
+  function password(){
+  var testV=1;
+  var pass1 = prompt('我们的密码：','');
+  while (testV < 3){
+  if (!pass1)
+  history.go(-1);
+  if (pass! == "0928") {
+  alert('密码正确');
+  break;}
+  testV+=1;
+  var pass1 = promt('密码错误！请重新输入：');
+  }
+  if (pass1!="password" & testV == 3)
+  history.go(-1);
+  return "";
+  }
+  document.write(password());
+  <\SCRIPT>  
 </head>
 
 <body>
